@@ -73,12 +73,12 @@ app.post("/api/phone/", (req, res, next) => {
         if (rows.length == 0) {
             res.json({
                 "phoneActionType": "IVR",
-                "phoneActionId": "2",
+                "phoneActionId": "3",
             })
         } else {
             res.json({
                 "phoneActionType": "QUEUE",
-                "phoneActionId": "3",
+                "phoneActionId": "6",
             })
         }
     });

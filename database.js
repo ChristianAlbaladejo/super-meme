@@ -20,7 +20,8 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
             // Table just created, creating some rows
             var insert = 'INSERT INTO phone (phone) VALUES (?)'
             db.run(insert, ["603421431"])
-            db.run(insert, ["65598707060"])
+            db.run(insert, ["655987070"])
+            db.run(insert, ["618740740"])
         }
     })  
     }
