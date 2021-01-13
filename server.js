@@ -70,7 +70,7 @@ app.post("/api/phone/", (req, res, next) => {
             res.status(400).json({ "error": err.message });
             return;
         }
-        if (rows.length != 0) {
+        if (rows.length == 0) {
             res.json({
                 "phoneActionType": "IVR",
                 "phoneActionId": "2",
